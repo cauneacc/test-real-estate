@@ -1,4 +1,53 @@
+### Starting docker containers
+```shell
+docker-compose up
+```
+
+After running the docker compose setup you should run the commands below to set up the project.
+
+### Installing Composer packages
+
+```
+docker-compose exec app composer install
+```
+
+### Generating key and optimizing app
+```
+# needed for generating application app key 
+docker-compose exec app php artisan key:generate
+docker-compose exec app php artisan optimize
+```
+
+### Running laravel and nodejs commands in docker
+```
+docker-compose exec app php artisan migrate:refresh --seed
+docker-compose exec app npm install
+```
+
+
+### Set owner of storage folder
+```shell
+docker-compose exec app chown www-data:www-data -R storage
+```
+
+### Prepare javascript files
+```shell
+docker-compose exec app npm run dev
+```
+
+### Create keys used by oauth and fix permissions
+```shell
+docker-compose exec app php artisan passport:keys
+docker-compose exec app chmod 600 storage/oauth-private.key
+docker-compose exec app chmod 600 storage/oauth-public.key
+docker-compose exec app chown www-data:www-data storage/oauth-private.key
+docker-compose exec app chown www-data:www-data storage/oauth-public.key
+
+```
+
+
 To use the application, go to http://localhost:8080/listEntries. You will be redirected to the login page.
+
 email: test@test.com
 password: secret
 
@@ -40,6 +89,7 @@ docker-compose exec app vendor/bin/phpunit
 
 
 
+# Original content of readme
 
 # Real estate backendb
 
