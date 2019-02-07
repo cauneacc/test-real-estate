@@ -1,0 +1,267 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-02-07T07:57:23.376Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_a168505559d140ea9ddec90fb57651fd",
+			"created": 1549437848376,
+			"description": "",
+			"modified": 1549437848376,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_483a42ee2d8d4556a42a94538f9d4a53",
+			"color": null,
+			"created": 1549437848417,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1549437848417,
+			"modified": 1549437848417,
+			"name": "New Environment",
+			"parentId": "wrk_a168505559d140ea9ddec90fb57651fd",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_709e14bc680d420f865e71dfddf1e523",
+			"cookies": [
+				{
+					"creation": "2019-02-06T11:31:14.317Z",
+					"domain": "localhost",
+					"expires": "2019-02-06T13:38:11.000Z",
+					"hostOnly": true,
+					"id": "2992556034854843",
+					"key": "XSRF-TOKEN",
+					"lastAccessed": "2019-02-06T11:38:11.026Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6IkJlK0ZKS29DT05OWEdDNjlWZnFGb2c9PSIsInZhbHVlIjoiYTNlN2hoMThQUHM0ajdseDBcLzhlYmt6TUpTcG1oWVpqS0F4ck5EVFBvWUpjV1d5Z014UzBBNWR0Z2RwazlDSFhSdldrbjJOXC9PRG50Zmp0bm85MTJEdz09IiwibWFjIjoiMGY4MWYwZWQwYjczNjhmYzgyZTZiNWI4NzMwZGFmOWRjY2Y4MGVmOWI5NzQyNWVhNjg0YWQ0NjdkYmU3ODYyZSJ9"
+				},
+				{
+					"creation": "2019-02-06T11:31:14.318Z",
+					"domain": "localhost",
+					"expires": "2019-02-06T13:38:11.000Z",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "04576886396220203",
+					"key": "laravel_session",
+					"lastAccessed": "2019-02-06T11:38:11.026Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6InVXd3lySENwTHF6dU9SUHFiOXoxSUE9PSIsInZhbHVlIjoiS0RvZ2VXV0tIOVZEbmlwXC80M1NxSHhQdEZOY09aUGdRdXpDOVlCRUY5ckdlYUFsMGc1amNmalhnN0dkSGdUQk5EaWN4S2J0cDFBOUZrOWp2dkxhb25RPT0iLCJtYWMiOiJiNjdlZDMwY2ZiZDQ3MGMwOGY0N2ZjMDg2YWMxY2FhNjVhODEyYTc1YzgwYWJkNjQyNGFiOTYwZjhkZTk2NjVlIn0%3D"
+				},
+				{
+					"creation": "2019-02-06T11:38:07.329Z",
+					"domain": "localhost",
+					"expires": "2019-02-06T13:38:11.000Z",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "09415291388545399",
+					"key": "laravel_token",
+					"lastAccessed": "2019-02-06T11:38:11.026Z",
+					"maxAge": 7200,
+					"path": "/",
+					"value": "eyJpdiI6IkVPRDBNYkhvSVlcL0VxXC92cWNTa2ZcL3c9PSIsInZhbHVlIjoiMHp5bzJYZWRJRWJHZm8wMTdVaUkzZ2hEeEZJWFpaUjcyZnVQM2V6c2tHZmtybzFCME0zN2NiXC9Sc0diTVVSVG83dHJBM2NtRHdnN1ZKdU40OWlFNDFENUdrYjNrcWdHVVwvK05leW1Md0QrSTZsYm1aS3ZZMWRpOXcyNnJ5bEFsS1Y4amsrWnUwTGNlMlJHcmVqSXhhbzN5T3V4OG1LSjlnUjExVkl4clwvcjdjSVlwYll1aVhYdmp3R3Z2K1wvbmJcL3dwYUpBbkhYYWxrOEdWV1wvNFpkV0pvcXZ2dUhPcktcL0p1TDhGQVUyNFQyeHRza05aMjJheGVPYk0wdDZJcjZ3VURLckN0d1wvN0V1VUhPV0J1RzRZRnorZz09IiwibWFjIjoiNmFmMGIxYmFiNzYzMDAxNmY1ZDM2MGVhZWU2YjAwZWEwYjk5NWI3Mjk2ZDgyMGQ4MzJlNWZmYzEzNzkyNGMyMyJ9"
+				}
+			],
+			"created": 1549437848419,
+			"modified": 1549453091027,
+			"name": "Default Jar",
+			"parentId": "wrk_a168505559d140ea9ddec90fb57651fd",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"created": 1549438815793,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1549438815793,
+			"modified": 1549438815793,
+			"name": "laravel-vue-real-estate",
+			"parentId": "wrk_a168505559d140ea9ddec90fb57651fd",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_3273e3f290dc49c4940d8011004e16ad",
+			"authentication": {},
+			"body": {},
+			"created": 1549437928911,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_287802fa5cbc4248a54c34d2d3189b5c",
+					"name": "Cookie",
+					"value": "XSRF-TOKEN=eyJpdiI6ImFCZEJ0eFwvaVNnWUtDZ1hBamttYkxRPT0iLCJ2YWx1ZSI6InZDeGpIdXVHNTU5TDI5TmZndzZFbWVUOWV4cFpobWdhOXVCbG9lekZSYThDajJKWVgyRlwvQ0dIMVwvU3hKa3NpcnQ3Smp6OG9SZCtSWlQ0aDMrY2g1a0E9PSIsIm1hYyI6IjIwYjlmZWFmNDcyOTI1NTM3OTFmOWI2NzU4MjM3MTM3ZWI5NGQzZDU0YjY0YmU4NDE4MTI1NzY3ZjA2YTViZGMifQ%3D%3D; laravel_session=eyJpdiI6IkMxQ2ZhbnI1OWx3UWw0QVRTWkEzWFE9PSIsInZhbHVlIjoiOXRTOFZaaUxUd05hVmpvXC9Ham5wUklQc0lBa1ZTRFNwUzgrWVdMeWFtV2JXb2ZRYWNZS2dIT3BLOXB2cnpuZHcyYVJJRFlMUkg2OW4xd3lSKzJXUmFnPT0iLCJtYWMiOiI5ZDU3ZmUxOTQ3YjlmYzZhNGJkY2E4MWU2YzVmNjZlNmMyOWY1MmM3NjAwMjU4ZmE1NTc3NzBkNjljZDk3MjU4In0%3D; laravel_token=eyJpdiI6Ik5GaXA5NHRRa21YSUxHZ3ArUzloRmc9PSIsInZhbHVlIjoiTm9LK3dyTmU5ODZPTGxqc1RQZ2RXV0NLSGFSd1JzOCsyNVFvU3FROGhQRVZxUGhac3RhWW16cFRTS1ZhZ1J5a3dYcmRuWmppUU5jSmZycGRkVUlveWFZNXNnSlV5UFR3NDgzOGhPb1lKMCtZVkVHUGl5VFJPOXpJVVZjXC92NE1kd3hUbWkwaFhZZW5makhLZWt6VlYyTjFKTTJVdlBuMGlMRGlndnJCZlwvWXZ2cDVSV3UySnFcLzRVYmtZSVdqdEN6dXJTVTJEMitFN0RLNFJrM1g2dW1cL2RkajUyQlpMTjdzb1NhaGkwbm1BYWRObVo4bE9UdTZxYjJsWjZENkxHK3FscCthaVpMZENPdSszWDRUaGsxMVVnPT0iLCJtYWMiOiJiMTg4NTRmN2M4NjQyODlmYTZjZjgyMmZhYjY2NzZlN2QwNDE1OWQxNTlhYmM2NDgyNWQwYmU5NmI3YThmYjY3In0%3D"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549438705990.5,
+			"method": "GET",
+			"modified": 1549453337638,
+			"name": "list entries",
+			"parameters": [],
+			"parentId": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/api/notProtectedLists",
+			"_type": "request"
+		},
+		{
+			"_id": "req_90fe6e796ef94cb28bfc9f293003e9f5",
+			"authentication": {},
+			"body": {},
+			"created": 1549437992087,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549438706003,
+			"method": "GET",
+			"modified": 1549453664086,
+			"name": "entry",
+			"parameters": [],
+			"parentId": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/api/notProtectedLists/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6afcfe4ebd1b40319d465b6ac536dde6",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"id": "pair_ccc46dcb8633452c85bafa29ec2b4efb",
+						"name": "name",
+						"value": "entry name"
+					},
+					{
+						"id": "pair_53b5057b85504f88baf5df6713a452fd",
+						"name": "city_id",
+						"value": "1"
+					},
+					{
+						"id": "pair_3c0dd34052a34bad89de27f249c10cd0",
+						"name": "developer_id",
+						"value": "1"
+					},
+					{
+						"id": "pair_04f994e1e22844389ffe71f794a3c402",
+						"name": "price",
+						"value": "99"
+					},
+					{
+						"id": "pair_2b304fb1f8364586b17c4c355bb963d4",
+						"name": "is_on_sale",
+						"value": "0"
+					}
+				]
+			},
+			"created": 1549438051373,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_8e808375819c4c7194b4f35753cc45a0",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549438705978,
+			"method": "POST",
+			"modified": 1549453674855,
+			"name": "create entry",
+			"parameters": [],
+			"parentId": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/api/notProtectedLists",
+			"_type": "request"
+		},
+		{
+			"_id": "req_494bfadf33ce406a94c769bbde53c244",
+			"authentication": {},
+			"body": {},
+			"created": 1549438097227,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549438706053,
+			"method": "GET",
+			"modified": 1549453631461,
+			"name": "countries",
+			"parameters": [],
+			"parentId": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/api/notProtectedCountries",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f42d3d8f47e140ef801c8acbaf834710",
+			"authentication": {},
+			"body": {},
+			"created": 1549438130578,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549438706028,
+			"method": "GET",
+			"modified": 1549453642389,
+			"name": "cities",
+			"parameters": [],
+			"parentId": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/api/notProtectedCities",
+			"_type": "request"
+		},
+		{
+			"_id": "req_276b1d7e690349e2862ca418ce03b6b4",
+			"authentication": {},
+			"body": {},
+			"created": 1549438376933,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549438706078,
+			"method": "GET",
+			"modified": 1549453620547,
+			"name": "developers",
+			"parameters": [],
+			"parentId": "fld_f14ef2741b744a7b9a8d2d290c07384a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/api/notProtectedDevelopers",
+			"_type": "request"
+		}
+	]
+}

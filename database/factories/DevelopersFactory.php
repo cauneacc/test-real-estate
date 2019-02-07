@@ -12,14 +12,8 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\User::class, function (Faker\Generator $faker) {
-
+$factory->define(App\Developers::class, function (Faker\Generator $faker) {
     return [
-//        'name' => $faker->name,
-//        'email' => $faker->unique()->safeEmail,
-        'name' => 'testUser',
-        'email' => 'test@test.com',
-        'password' => bcrypt('secret'),
-        'remember_token' => str_random(10),
+        'name' => $faker->name
     ];
 });

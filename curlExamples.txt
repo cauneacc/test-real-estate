@@ -1,0 +1,17 @@
+curl --request GET --url http://localhost:8080/api/notProtectedDevelopers
+
+curl --request GET --url http://localhost:8080/api/notProtectedCountries
+
+curl --request GET --url http://localhost:8080/api/notProtectedCities
+
+curl --request GET --url http://localhost:8080/api/notProtectedLists/1
+
+curl --request GET --url http://localhost:8080/api/notProtectedLists
+
+curl --request POST \
+  --url http://localhost:8080/api/notProtectedLists \
+  --form 'name=entry name' \
+  --form city_id=1 \
+  --form developer_id=1 \
+  --form price=99 \
+  --form is_on_sale=0

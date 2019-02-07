@@ -8,6 +8,7 @@
         "php": ">=5.6.4",
         "fzaninotto/faker": "^1.8",
         "laravel/framework": "5.4.*",
+        "laravel/passport": "1.0.16",
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
@@ -23,6 +24,9 @@
         }
     },
     "autoload-dev": {
+		"classmap": [
+			"tests/TestCase.php"
+		],
         "psr-4": {
             "Tests\\": "tests/"
         }

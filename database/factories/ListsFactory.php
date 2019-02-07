@@ -12,14 +12,15 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(App\Lists::class, function (Faker\Generator $faker) {
+	$cityIds = App\Cities::all()->pluck('id')->toArray();
+	$developerIds = App\Developers::all()->pluck('id')->toArray();
 
     return [
-//        'name' => $faker->name,
-//        'email' => $faker->unique()->safeEmail,
-        'name' => 'testUser',
-        'email' => 'test@test.com',
-        'password' => bcrypt('secret'),
-        'remember_token' => str_random(10),
+        'price' => rand(1,9999),
+        'city_id' => $faker->randomElement($cityIds),
+		'developer_id' => $faker->randomElement($developerIds),
+        'name' => $faker->name,
+		'is_on_sale' => (bool)rand(0,1),
     ];
 });

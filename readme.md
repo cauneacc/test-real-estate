@@ -1,3 +1,46 @@
+To use the application, go to http://localhost:8080/listEntries. You will be redirected to the login page.
+email: test@test.com
+password: secret
+
+There are 3 vue.js components. 
+
+Communication between the vue.js components and the Laravel backend is done using the axios library.
+The components communicate between them using a event bus made using a vue.js component.
+AddEntryForm.vue displays the form at the top of the page. Form validation is done by Laravel, it is not done on the browser side.
+When an entry is successfully created an event is emited on the event bus and the Entries.vue component, updates it's data.
+Entries.vue displays a search form and a table with the results. 
+When a row of the results table is clicked, an event is emitted on the event bus and the ShowEntry.vue component displays the details.
+ShowEntry.vue displays a modal windows with the details of a real estate listing.
+
+Example cURL requests are in the file /curlExamples.txt
+An export of an Insomnia folder is in the file /Insomnia_2019-02-07.json
+The api endpoints used by the vue.js components are protected using Laravel Passport. For ease of manually testing I have made a second set of routes accessing the same controllers in Laravel.
+```php
+Route::get('lists', 'ListsController@index')->middleware('auth:api');
+Route::get('lists/{list}', 'ListsController@show')->middleware('auth:api');
+Route::post('lists', 'ListsController@store')->middleware('auth:api');
+Route::get('countries', 'CitiesController@indexCountries')->middleware('auth:api');
+Route::get('cities', 'CitiesController@index')->middleware('auth:api');
+Route::get('developers', 'DevelopersController@index')->middleware('auth:api');
+
+//these are for simple testing with curl or insomnia
+Route::get('notProtectedLists', 'ListsController@index');
+Route::get('notProtectedLists/{list}', 'ListsController@show');
+Route::post('notProtectedLists', 'ListsController@store');
+Route::get('notProtectedCountries', 'CitiesController@indexCountries');
+Route::get('notProtectedCities', 'CitiesController@index');
+Route::get('notProtectedDevelopers', 'DevelopersController@index');
+```
+
+Testing /api/notProtectedDevelopers 
+
+```shell
+docker-compose exec app vendor/bin/phpunit
+```
+
+
+
+
 # Real estate backendb
 
 Develop a simple real estate application with Laravel and Vue.js. 

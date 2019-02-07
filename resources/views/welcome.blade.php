@@ -63,6 +63,9 @@
                 margin-bottom: 30px;
             }
         </style>
+		
+		<link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
+		<meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -78,6 +81,8 @@
             @endif
 
             <div class="content">
+				 @yield('content')
+<!-- 
                 <div class="title m-b-md">
                     Laravel
                 </div>
@@ -89,7 +94,9 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+ -->
             </div>
         </div>
     </body>
+	<script src="{{ mix('js/app.js') }}"></script>
 </html>
