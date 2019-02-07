@@ -35,8 +35,8 @@ class ListsController extends Controller
     {
 		$validator = $this->validate($request, [
             'name' => 'required|string|min:3|max:191',
-			'city_id' => 'required|integer',
-			'developer_id' => 'required|integer',
+			'city_id' => 'required|integer|exists:cities,id',
+			'developer_id' => 'required|integer|exists:developers,id',
             'price' => 'required|numeric|min:1',
             'is_on_sale' => 'boolean',
         ]);

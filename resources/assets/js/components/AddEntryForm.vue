@@ -94,7 +94,7 @@ import { globalEventBus } from '../app';
 				developers:[],
                 entry: {
                     title: null,
-                    country_id: null,
+                    city_id: null,
 					developer_id: null,
                     price: null,
 					is_on_sale: null,
@@ -144,7 +144,7 @@ import { globalEventBus } from '../app';
                 this.errors = [];
                 this.entry = {
                     title: null,
-                    country_id: null,
+                    city_id: null,
 					developer_id: null,
                     price: null,
 					is_on_sale: null
